@@ -1,0 +1,135 @@
+/* @import url('https://fonts.google.com/specimen/Lexend+Deca'); */
+/* @import url('https://fonts.google.com/specimen/Big+Shoulders+Display'); */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--paragraphs-color:  hsla(0, 0%, 100%, 0.75);
+--Very-light-gray: hsl(0, 0%, 95%);
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Big Shoulders Display', cursive;
+    display: flex;
+    font-size: 15px;
+    background-color: var(--Very-light-gray);
+    justify-content: center;
+    margin-top: 200px;
+}
+
+h1{
+    color: var(--Very-light-gray); 
+    font-weight: 100px; 
+    font-size: 50px;
+
+}
+
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 30px;
+    margin-bottom: 100px;
+    font-size: 20px;
+}
+
+
+button{
+    background-color: var(--Very-light-gray);
+    font-size: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bolder;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 3px var(--Very-light-gray) solid;
+    height: 60px;
+    width: 170px;
+}
+
+button:hover{
+    background-color: transparent;
+    color: var(--Very-light-gray);
+    border: 3px var(--Very-light-gray) solid;
+}
+
+
+.sedans-btn{
+color: var(--Bright-orange);
+
+}
+.suv-btn{
+ 
+    color: var(--Dark-cyan);
+}
+.luxury-btn{
+    color: var(--Very-dark-cyan);
+}
+
+
+.card
+{
+    width: 360px;
+    height: 600px;
+    color: #fff; 
+    line-height: 1.4;
+    padding: 50px;
+}
+.card-sedans{
+background-color: var(--Bright-orange);
+border-radius: 10px 0px 0px 10px;
+
+}
+.card-suvs{
+background-color: var(--Dark-cyan);
+}
+.card-luxury{
+background-color: var(--Very-dark-cyan);
+border-radius: 0px 10px 10px 0px;
+}
+img{
+    margin-bottom: 40px;
+
+}
+/* Moble */
+@media(max-width: 500px){
+    body{
+     
+        display: block;
+        margin: 10px;
+        padding: 50px;
+        
+    }
+
+
+
+    .card-sedans{
+     
+        border-radius: 10px 10px 0px 0px;
+        }
+        .card-luxury{
+        border-radius: 0px 0px 10px 10px;
+        }
+
+        .card
+        {
+            width: 380px;
+            height: 530px;
+            
+        }
+
+        p{
+           
+            margin-top: 30px;
+            margin-bottom: 30px;
+            
+        }
+
+}
